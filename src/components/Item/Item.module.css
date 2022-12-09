@@ -1,0 +1,45 @@
+.item {
+    display: flex;
+    flex-direction: row;
+    width: 100%
+}
+
+p.name {
+    font-size: 1.5rem;
+    margin: 2px auto 2px 1em;
+}
+
+
+.star-container {
+    align-items: flex-end;
+    display: flex;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    height: 2em;
+    width: 2em;
+}
+
+.star {
+    visibility: hidden;
+    font-size: 2rem;
+    cursor: pointer;
+    border-color: yellow;
+    line-height: 1rem;
+    background-color: aqua;
+}
+
+.star:before {
+    content: "\2605";
+    position: absolute;
+    visibility: visible;
+    color: #ECA539;
+
+
+
+}
+
+.star:checked:before {
+    content: "\2606";
+    position: absolute;
+    color: #ECA539;
+}
