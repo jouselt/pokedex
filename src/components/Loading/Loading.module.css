@@ -1,0 +1,23 @@
+.loading {
+    height: 40vh;
+    pointer-events: none;
+    display: block;
+    margin: auto;
+    margin-top: 30vh;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .loading {
+        animation: poke-loading-spin infinite 3s linear;
+    }
+}
+
+@keyframes poke-loading-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
